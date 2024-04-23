@@ -1,6 +1,6 @@
 const bg1 = document.querySelector(".container-bg");
 const col_box = document.querySelector(".skills-bg");
-const certification = document.querySelector("#certification");
+// const certification = document.querySelector("#certification");
 const about = document.querySelector(".about_bg");
 const windowWidth = window.innerWidth;
 
@@ -15,7 +15,7 @@ window.addEventListener("scroll", (event) => {
       col_box.style.top = `${5 - scrollY / 100}%`;
       if (scrollY > 900 && scrollY <= 1150) {
         col_box.style.transform = `rotate(0deg)`;
-        certification.style.transform = `translateX(${100 - scrollY / 8}%)`;
+        // certification.style.transform = `translateX(${100 - scrollY / 8}%)`;
       }
     } else {
       col_box.style.top = `${(scrollY / 100) * 5}%`;
@@ -26,7 +26,7 @@ window.addEventListener("scroll", (event) => {
     col_box.style.transform = `rotate(0deg)`;
   }
   if (scrollY > 600 && scrollY <= 850) {
-    certification.style.transform = `translateX(${100 - scrollY / 8}%)`;
+    // certification.style.transform = `translateX(${100 - scrollY / 8.5}%)`;
   }
   if (windowWidth < 600 && scrollY > 1400 && scrollY <= 2450) {
     about.style.left = `${100 - scrollY / 50}%`;
