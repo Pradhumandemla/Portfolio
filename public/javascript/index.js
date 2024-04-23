@@ -26,7 +26,7 @@ window.addEventListener("scroll", (event) => {
     col_box.style.transform = `rotate(0deg)`;
   }
   if (scrollY > 600 && scrollY <= 850) {
-    certification.style.transform = `translateX(${100 - scrollY / 8.5}%)`;
+    certification.style.transform = `translateX(${100 - scrollY / 8}%)`;
   }
   if (windowWidth < 600 && scrollY > 1400 && scrollY <= 2450) {
     about.style.left = `${100 - scrollY / 50}%`;
